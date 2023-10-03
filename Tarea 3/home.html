@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Viajes Gastronomicos</title>
+    <meta name="author" content="Daniel Conejo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Viajes Gastronomicos" />
+    <link rel="shortcut icon" href="#">
+    <link href="stylehome.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Comida alrededor del mundo</h1>
+        </div>
+        <nav id="encabezado">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Mexico.html">Comida Mexicana</a></li>
+                <li><a href="Chile.html">Comida Chilena</a></li>
+                <li><a href="Japon.html">Comida Japonesa</a></li>
+            </ul>
+
+        </nav>
+        <div class="hide">
+            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+    </header>
+    <main>
+        <div id="introduccion">
+            <p>¡Bienvenidos a un apasionante viaje gastronómico que deleitará
+                tus sentidos y te llevará a descubrir los sabores más exquisitos
+                de diversas culturas culinarias alrededor del mundo! Acompáñanos en
+                esta travesía única donde exploraremos
+                los rincones más auténticos y apetitosos de la cocina global</p>
+
+        </div>
+        <div id="tablas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pais</th>
+                        <th>Plato Emblematico</th>
+                        <th>Ubicación</th>
+                        <th>Platos Sugeridos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>México</td>
+                        <td>Tacos al Pastor</td>
+                        <td>México es un país ubicado en América del Norte, limitado al norte por los Estados Unidos de
+                            América, <br>
+                            al este por el golfo de México y el mar Caribe, al sureste por Belice y Guatemala,<br>
+                            y al oeste y sur por el océano Pacífico.</td>
+                        <td>Enchiladas<br>
+                            Pozole<br>
+                            Chiles en Nogada</td>
+                    </tr>
+                    <tr>
+                        <td>Chile</td>
+                        <td>Asado a la Parrilla</td>
+                        <td>Chile es un país situado en América del Sur,
+                            <br>con una extensa franja costera a lo largo del océano Pacífico. <br>
+                            Limita al norte con Perú, al este con Bolivia y Argentina, y al sur con la Antártida.
+                        </td>
+                        <td>Cazuela<br>
+                            Pastel de Choclo<br>
+                            Pebre</td>
+                    </tr>
+                    <tr>
+                        <td>Japón</td>
+                        <td>Sushi (寿司)</td>
+                        <td>Japón es un país insular ubicado en el este de Asia</td>
+                        <td>Yakitori (焼き鳥)<br>
+                            Gyoza (餃子)<br>
+                            Unagi (鰻)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(".hide").on('click', function () {
+            $("nav ul").toggle('slow');
+        })
+    </script>
+    <footer>
+        <h2><small>&copy; Copyright 2022 - Viajes Gastronomicos</small></h2>
+        <button><a href="#titulo"><img  src="flecha-hacia-arriba.png"></a></button>
+    </footer>
+</body>
+
+
+<html>

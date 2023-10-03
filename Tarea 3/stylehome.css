@@ -1,0 +1,180 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: wheat;
+    padding: 19px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#titulo {
+    display: flex;
+    flex: 1;
+
+}
+
+#encabezado {
+    display: flex;
+    flex: 1;
+    color: black;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    display: none;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 10px;
+    display: inline-block;
+    transition: all ease-in-out 250ms;
+}
+
+li a:hover {
+    color: grey;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-right: 2px solid white;
+  
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#introduccion {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 85%;
+    background-image:
+        linear-gradient(0deg,
+            rgba(2, 2, 2, 0.5),
+            rgba(2, 2, 2, 0.5));
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-image:
+        linear-gradient(0deg,
+            rgba(2, 2, 2, 0.5),
+            rgba(2, 2, 2, 0.5));
+    color: aliceblue;
+}
+
+footer {
+    margin-top: 55px;
+    display: flex;
+    background-color: wheat;
+    padding: 19px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(tomates-tomates-hojas-limon-ajo-botella-aceite-ramas-arboles\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hide {
+    padding: 16px;
+    font-size: 22px;
+    background: wheat;
+    color: black;
+    display: block;
+}
+button{
+    background-color: wheat;
+    border: none;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    ul li {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        margin-right: 85px;
+    }
+    #introduccion{
+        margin-left: 20px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    #headeer h1{
+        font-size: 10px;
+    }
+    nav ul {
+        display: none;
+        justify-content: center;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+      }
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        margin: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
