@@ -1,0 +1,219 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+  src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font: normal .8em arial, sans-serif;
+  background: #C4E9E8 url(../images/back.png) repeat-x;
+  color: #555;
+
+}
+
+#main {
+  display: flex;
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  margin: -10% 15% 0px 15%;
+  border-radius: 30px;
+  flex-direction: column;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#logo img{
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  
+}
+
+#menu {
+  display: flex;
+  justify-content: left;
+  flex: 1;
+  background-color: #53C7FD;
+  padding: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+#menu ul a:hover{
+  color:#E5017D;
+}
+#container {
+  background: transparent url(../images/grass.png) repeat-x bottom;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  width: 40px;
+  padding-top: 26px;
+  padding: 38px;
+  margin-left: 19px;
+}
+
+#cont {
+  display: flex;
+  flex: 0 1 250px;
+  flex-direction: column;
+  padding-top: 26px;
+  align-items: right;
+}
+
+
+article img {
+  max-height: 300px;
+  max-width: 980px;
+  width: auto;
+  height: auto;
+  border: 1px solid #C9E5E9;
+  margin-left: 10px;
+  margin-right: 19px;
+  padding: 10px;
+}
+
+article p {
+  margin-bottom: 7px;
+}
+
+h1 {
+  Color: #E5017D;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #53C7FD;
+  padding: 45px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+h2 {
+  font: normal 170% arial, sans-serif;
+  color: #80E804;
+  margin-bottom: 5px;
+}
+h3{
+  font: normal 100% arial, sans-serif;
+  color: #FFF;
+  margin-top: 5px;
+
+}
+
+#menudown {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background-color: #53C7FD;
+
+}
+
+#menudown ul {
+  list-style: none;
+}
+
+#menudown ul a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#menudown ul li {
+  display: inline-block;
+  margin-right: 10px;
+  border-right: #C4E9E8 1px solid;
+  padding-right: 5px;
+}
+#menudown ul a:hover{
+  color:#E5017D;
+}
+
+#grass {
+  background: #64BF38;
+  width: 100%;
+  height: 50px;
+  margin-top: -0px;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 190%;
+  overflow: auto;
+ background-color: #53C7FD ;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #00A4BD;
+}
+

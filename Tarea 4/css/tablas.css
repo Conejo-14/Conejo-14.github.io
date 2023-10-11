@@ -1,0 +1,265 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+  src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font: normal .8em arial, sans-serif;
+  background: #C4E9E8 url(../images/back.png) repeat-x;
+  color: #555;
+
+}
+
+#main {
+  display: flex;
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  margin: -10% 15% 0px 15%;
+  border-radius: 30px;
+  flex-direction: column;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#logo img {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+
+}
+
+#menu {
+  display: flex;
+  justify-content: left;
+  flex: 1;
+  background-color: #53C7FD;
+  padding: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#menu ul a:hover {
+  color: #E5017D;
+}
+
+#container {
+  background: transparent url(../images/grass.png) repeat-x bottom;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  padding-top: 26px;
+  padding: 38px;
+  flex-direction: column;
+}
+
+#parrafo {
+  margin-left: 20px;
+}
+
+#disponibles {
+  color: #FFF;
+  background-color: #53c7fd;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: -24px;
+  margin-top: 10px;
+}
+
+
+
+table {
+  width: 95%;
+  height: 95%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 50px;
+  display: block;
+  overflow: scroll;
+}
+
+th,
+td {
+  padding: 20px 40px 62px 40px;
+  text-align: left;
+}
+
+th {
+  color: #FFF;
+  background-color: #e5017d;
+}
+
+#color1 {
+  background-color: #ffffff;
+  color: grey;
+}
+
+#color2 {
+  background-color: #c8eae9;
+  color: grey;
+}
+
+td img {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 150px;
+}
+
+h1 {
+  Color: #E5017D;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #53C7FD;
+  padding: 45px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+h2 {
+  font: normal 170% arial, sans-serif;
+  color: #80E804;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font: normal 100% arial, sans-serif;
+  color: #FFF;
+  margin-top: 5px;
+
+}
+
+#menudown {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background-color: #53C7FD;
+
+}
+
+#menudown ul {
+  list-style: none;
+}
+
+#menudown ul a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#menudown ul li {
+  display: inline-block;
+  margin-right: 10px;
+  border-right: #C4E9E8 1px solid;
+  padding-right: 5px;
+}
+
+#menudown ul a:hover {
+  color: #E5017D;
+}
+
+#grass {
+  background: #64BF38;
+  width: 100%;
+  height: 50px;
+  margin-top: -0px;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 190%;
+  overflow: auto;
+  background-color: #53C7FD;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #00A4BD;
+}
+
+@media(max-width: 768px) {
+  article {
+    width: 500px;
+  }
+}
