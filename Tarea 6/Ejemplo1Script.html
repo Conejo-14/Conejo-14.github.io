@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>JavaScript ejemplo busqueda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Curso de Diseño de Aplicaciones Web" />
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST" />
+    <meta name="author" content="Daniel Jose Conejo Chavarria" />
+    <script src="ejemplo.js"></script>
+    <style>
+        .card {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card-header {
+            font-weight: bold;
+        }
+
+        .card-body {
+            margin-top: 5px;
+        }
+
+        body {
+            background-color: burlywood;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            padding-left: 40px;
+        }
+
+        #Ejercicio {
+            background-color: azure;
+            padding: 10px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    <div id="Ejercicio">
+
+        <h2>Ejercicio 1</h2>
+
+        <input type="textfield" id="busquedaInput" onkeyup="filtrarElementos()">
+
+        <ul id="listaElementos">
+            <li>San José</li>
+            <li>Cartago</li>
+            <li>Heredia</li>
+
+        </ul>
+    </div>
+    <div id="Ejercicio">
+        <h2>Ejercicio 2</h2>
+        <div id="productosContainer">
+            <script>
+                var productos = [
+                    { nombre: "Sal", precio: 10.99 },
+                    { nombre: "Arroz", precio: 15.99 },
+                    { nombre: "Frijoles", precio: 12.99 },
+                    { nombre: "Azucar", precio: 9.99 },
+                    { nombre: "Pan", precio: 19.99 }
+                ];
+
+                var productosContainer = document.getElementById("productosContainer");
+
+                for (var i = 0; i < productos.length; i++) {
+                    var producto = productos[i];
+
+                    var cardDiv = document.createElement("div");
+                    cardDiv.className = "card";
+
+                    var headerDiv = document.createElement("div");
+                    headerDiv.className = "card-header";
+                    headerDiv.textContent = producto.nombre;
+
+                    var bodyDiv = document.createElement("div");
+                    bodyDiv.className = "card-body";
+                    bodyDiv.textContent = "Precio: $" + producto.precio.toFixed(2);
+
+                    cardDiv.appendChild(headerDiv);
+                    cardDiv.appendChild(bodyDiv);
+                    productosContainer.appendChild(cardDiv);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
