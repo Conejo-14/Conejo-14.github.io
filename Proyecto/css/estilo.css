@@ -1,0 +1,285 @@
+html {
+    height: 100%;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../Imagenes/FondoPequeño.jpg');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo en su lugar */
+}
+
+#icono img {
+    width: 70%;
+    height: 70%;
+    padding-left: 13%;
+    background-color: #bfd5ff;
+}
+.d-flex{
+    padding-right: 1%;
+}
+.container-fluid {
+    background-color: #bfd5ff;
+}
+
+.navbar-toggler {
+    display: flex;
+    justify-content: end;
+}
+
+#menu {
+    float: right;
+    display: flex;
+    flex: 1;
+    padding: 1.5%;
+    margin: 0.8%;
+    border-right: rgb(149, 79, 149);
+}
+
+#menu a {
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(149, 79, 149);
+    border-right: 1px solid rgb(149, 79, 149);
+    padding-right: 1%;
+}
+
+#navbarSupportedContent a {
+    font-weight: bolder;
+}
+
+#navbarSupportedContent a:hover {
+    color: azure;
+}
+
+#navegador {
+    background-color: #bfd5ff;
+
+}
+
+#foot {
+    background-color: #bfd5ff;
+    margin-top: 25px;
+}
+
+#foot p {
+    text-align: right;
+    padding: 15px;
+}
+
+#foot img{
+    width: 75px;
+    height: 75px;
+}
+
+#suscribeBnt {
+    margin-top: 15px;
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+#suscribeBnt:hover {
+    background-color: #aecafe;
+}
+
+#redesSociales {
+    display: flex;
+    margin: 75px;
+    justify-content: left;
+
+}
+
+#redesSociales a {
+    margin: 15px;
+}
+
+#autor {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+#contenedorFoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#contenedorMenu {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 15px;
+    background-color: #bfd5ff;
+    align-content: center;
+}
+
+#contenedorMenu nav a {
+    display: inline-block;
+    padding: 3px;
+    font-weight: bolder;
+}
+
+#contenedorMenu a:hover {
+    color: azure;
+}
+
+#contenedor {
+    margin: 50px;
+    display: flex;
+    flex: 1;
+}
+
+#eslogan {
+    display: flex;
+    flex: 1;
+    margin-right: 60px;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+#eslogan p {
+    margin: 15px;
+    text-align: center;
+    padding: 75px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#carouselExampleIndicators {
+
+    display: flex;
+    flex: 1;
+}
+
+.carousel-inner img {
+    width: 630px;
+    height: 600px;
+}
+
+.carousel-inner iframe {
+    width: 630px;
+    height: 600px;
+}
+
+#botonGaleria a {
+    color: #bfd5ff;
+}
+
+#botonG {
+    background-color: #bfd5ff;
+    border-color: #bfd5ff;
+    color: black;
+
+}
+
+#botonG:hover {
+    background-color: white;
+
+}
+
+#botonGaleria {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media(max-width:768px) {
+    #contenedor {
+        flex-direction: column;
+    }
+
+    #eslogan {
+        display: inline-block;
+        justify-content: space-evenly;
+        margin: -55px;
+
+    }
+
+    .carousel-inner img {
+        flex: 1;
+        width: 350px;
+        height: 450px;
+
+    }
+
+    .carousel-inner iframe {
+        width: 350px;
+        height: 450px;
+    }
+
+    #carouselExampleIndicators {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    #contenedorFoot {
+        flex-direction: column;
+    }
+
+    #contenedorMenu nav a {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu {
+        position: relative;
+        background-color: #bfd5ff;
+    }
+
+    #navegador {
+        flex-direction: column;
+        background-color: #bfd5ff;
+
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar-toggler {
+        display: block;
+        justify-content: end;
+    }
+
+    #icono img {
+        width: 30%;
+        height: 30%;
+        background-color: #bfd5ff;
+    }
+
+    #botonGaleria {
+        flex-direction: column;
+    }
+
+    #icono {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

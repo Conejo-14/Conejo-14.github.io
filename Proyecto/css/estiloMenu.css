@@ -1,0 +1,350 @@
+html {
+    height: 100%;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../Imagenes/FondoPequeño.jpg');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo en su lugar */
+}
+
+#icono img {
+    width: 70%;
+    height: 70%;
+    padding-left: 13%;
+    background-color: #bfd5ff;
+}
+.d-flex{
+    padding-right: 1%;
+}
+.container-fluid {
+    background-color: #bfd5ff;
+}
+
+.navbar-toggler {
+    display: flex;
+    justify-content: end;
+}
+
+#menu {
+    float: right;
+    display: flex;
+    flex: 1;
+    padding: 1.5%;
+    margin: 0.8%;
+    border-right: rgb(149, 79, 149);
+}
+
+#menu a {
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(149, 79, 149);
+    border-right: 1px solid rgb(149, 79, 149);
+    padding-right: 1%;
+}
+
+#navbarSupportedContent a {
+    font-weight: bolder;
+}
+
+#navbarSupportedContent a:hover {
+    color: azure;
+}
+
+#navegador {
+    background-color: #bfd5ff;
+
+}
+
+#foot {
+    background-color: #bfd5ff;
+    margin-top: 25px;
+}
+
+#foot p {
+    text-align: right;
+    padding: 15px;
+}
+
+#foot img {
+    width: 75px;
+    height: 75px;
+}
+
+#suscribeBnt {
+    margin-top: 15px;
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+#suscribeBnt:hover {
+    background-color: #aecafe;
+}
+
+#redesSociales {
+    display: flex;
+    margin: 75px;
+    justify-content: left;
+
+}
+
+#redesSociales a {
+    margin: 15px;
+}
+
+#autor{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+#contenedorMenu{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 15px;
+    background-color: #bfd5ff;
+    align-content: center;
+}
+#contenedorMenu nav a{
+    display: inline-block;
+    padding: 3px;
+    font-weight: bolder;
+}
+
+#contenedorFoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#contenedorMenu {
+    margin: 25px;
+    padding: 15px;
+    background-color: #bfd5ff;
+}
+
+#contenedorMenu a:hover {
+    color: azure;
+}
+
+#contenedor {
+    margin: 50px;
+    display: flex;
+    flex: 1;
+}
+
+#contenedorM h3 {
+    color: #0166ef;
+}
+
+#contenedorM {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+#sabores h1 {
+    color: #0166ef;
+}
+
+#sabores strong {
+    color: #0166ef;
+}
+
+#sabores {
+    background-color: rgba(255, 255, 255, 0.795);
+    display: block;
+    margin: 10px;
+}
+
+#cakes {
+
+    margin: 10px;
+    display: flex;
+
+}
+
+#precios p {
+    border-bottom: 1px solid black;
+}
+
+#cupcakes {
+    margin: 10px;
+    display: flex;
+
+}
+
+#text {
+    margin: 10px;
+}
+
+#adv2 {
+    color: #0166ef;
+}
+
+#contenedor2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.795);
+    margin-top: 10px;
+}
+
+#contenedor2 h3 {
+    color: #0166ef;
+}
+
+#decorated h6 strong {
+    color: #0166ef;
+}
+
+#decorated {
+    display: block;
+    margin: 10px;
+}
+
+#mideco {
+    display: block;
+    margin: 10px;
+}
+
+#decorated p {
+    border-bottom: 1px solid black;
+}
+
+#price {
+    justify-content: center;
+}
+
+#macarons {
+    display: block;
+
+}
+
+#macarons h6 strong {
+    color: #0166ef;
+}
+
+#macarons p {
+    border-bottom: 1px solid black;
+}
+
+#botonUbicacion {
+    background-color: #bfd5ff;
+    border-color: #bfd5ff;
+    color: black;
+
+}
+
+#botonUbicacion:hover {
+    background-color: white;
+
+}
+
+@media(max-width:768px) {
+
+    #contenedorFoot {
+        flex-direction: column;
+    }
+
+    #menu {
+        position: relative;
+        background-color: #bfd5ff;
+    }
+
+    #navegador {
+        flex-direction: column;
+        background-color: #bfd5ff;
+
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar-toggler {
+        display: block;
+        justify-content: end;
+    }
+
+    #autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #icono img {
+        width: 40%;
+        height: 40%;
+        background-color: #bfd5ff;
+    }
+
+    #botonGaleria {
+        flex-direction: column;
+    }
+
+    #icono {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #contenedorM {
+        flex-direction: column;
+
+    }
+
+    #precios {
+        flex-direction: column;
+    }
+
+    #sabores {
+
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #contenedor2 {
+        flex-direction: column;
+
+        padding: 0px;
+    }
+
+    #decorated {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mideco {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #macarons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contenedorMenu nav a{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        text-align: center;
+       }
+}

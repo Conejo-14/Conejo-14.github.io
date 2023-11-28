@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tienda Galletas</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/estiloMenu.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="shortcut icon" href="imagenes/circle_logo.webp">
+</head>
+
+<body>
+  <div id="navegador">
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container-fluid">
+        <a id="icono" href="index.html"><img src="Imagenes/circle_logo.webp" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="spanNav"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">CART</a>
+            </li>
+
+
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <div id="sabores">
+      <h1 id="cup">Cakes & Cupcakes</h1>
+      <p><strong>Flavors: </strong>White, Chocolate, Lemon, Red Velvet and Confetti</p>
+      <p><strong>Fillings: </strong>Chocolate Ganache, Buttercream, Strawberry Jam, Raspberry Jam, Cherry Jam, Oreo, and
+        Cream Chesse</p>
+      <p><strong>Frostings: </strong>Swiss Meringue Buttercream, American Buttercream, and Chocolate Ganache</p>
+    </div>
+    <div id="contenedorM">
+
+      <div id="cakes">
+        <h3 id="text">Cakes Prices: </h3><br>
+        <div id="precios">
+          <p>1/4 Sheet (15 - 12 Servings) $35 Buttercream</p>
+          <p>1/4 Sheet (30 - 40 Servings) $50 Buttercream</p>
+          <p>Full Sheet (30 - 40 Servings) $50 Buttercream</p>
+          <p>6 Triple Layer Round $36 Fondant</p>
+          <p>8 Triple Layer Round $60 Fondant</p>
+          <p>10 Triple Layer Round $108 Fondant</p>
+          <p>12 Triple Layer Round $168 Fondant</p>
+
+          <p id="advertencia">*<strong>These are base prices. Hand-Drawings, Gumpaste or Fondant details <br>
+              have an extra cost</strong></p>
+          <p id="adv2">**<strong>Tier cakes have an extra $10, 20 or 30 stacking fee <br>
+              depending on the number of tiers</strong></p>
+        </div>
+      </div>
+
+      <div id="cupcakes">
+        <h3 id="text">Cupcake Prices:</h3>
+        <div id="precios">
+          <p>Basic Cupcakes $20/dozen</p>
+          <p>Filled Cupcakes $26/dozen</p>
+          <p>Pull-apart cake $2/cupcake</p>
+          <p><strong>* A dozen minimun order</strong></p>
+          <p><strong>**Fondant details/decorations have an extra cost</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contenedor2">
+      <div id="decorated">
+        <h3>Decorated Cookies: <br></h3>
+        
+          <h6><strong>Flavors: </strong>Sugar and Lemon</h6>
+          <h6><strong>Frosting: </strong>Royal Icing</h6>
+          <h6><strong id="price">Prices:</strong></h6>
+          <p>Basic shape, Plain Iced only  $24/dozen</p>
+          <p>Custom shape/Decorated set $36-$60/dozen</p>
+          <p><strong>* A dozen minimun order</strong></p>
+          <p><strong>**Gluten free option available, Lemon only</strong></p>
+          <p><strong>***Price varie depending on detail and sice of cookies</strong></p>
+      </div>
+
+      <div id="macarons">
+        <h3>Macarons: </h3>
+        <h6><strong>Filings: </strong>Vanilla Buttercream, Strawberry Jam, and Chocolate Ganache</h6>
+        <h6><strong id="price">Prices:</strong></h6>
+        <p>Basic Round Macaron $18/dozen</p>
+        <p>Custom Shape $24/dozen</p>
+        <p><strong>* A dozen minimun order</strong></p>
+        <p><strong>**These are Gluten Free</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="foot">
+    <div id="contenedorFoot">
+      <div id="redesSociales">
+
+        <a href="https://www.facebook.com/profile.php?id=61550250025984"><img
+            src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="facebook"></a>
+        <a href="https://www.tiktok.com/@anthonyquesadas"><img src="Imagenes/TikTok.png" alt="TikTok"></a><br>
+
+      </div>
+      <div id="contenedorMenu">
+        <nav>
+          <a class="nav-link" href="index.html">HOME</a>          
+          <a class="nav-link" href="menu.html">MENU</a>
+          <a class="nav-link" href="about.html">ABOUT</a>
+          <a class="nav-link" href="author.html">AUTHOR</a>
+          <a class="nav-link" href="index.html">CONTACT US</a>
+          <a class="nav-link" href="gallery.html">PHOTO GALLERY</a>         
+        </nav>
+        <button type="button" id="suscribeBnt" class="btn btn-light">Subscribe</button>
+      </div>
+      <div id="autor">
+        <p><strong>&copy;Phone:</strong> 319-464-1699 (Text Only)</p> <br>
+        <p><strong>Email:</strong> aq-sanchez92@hotmail.com</p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

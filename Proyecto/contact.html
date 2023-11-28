@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda Galletas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estiloContact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagenes/circle_logo.webp">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj9a0VJe3vK9AC-a7AVL5ySAoKjbX9USQ&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="navegador">
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="container-fluid">
+                <a id="icono" href="index.html"><img src="Imagenes/circle_logo.webp" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="spanNav"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">CART</a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <p>Want a quote? Text, email or fill the form below and we will reach back!</p>
+        </div>
+
+        <div id="container">
+            <h3>Let's chat</h3> <br>
+            <div id="chat">
+
+                <p id="phone">Phone (text only) <br>
+
+                    319-464-1699</p>
+
+                <p>Email <br>
+
+                    aq-sanchez92@hotmail.com</p>
+            </div>
+
+            <div id="contacto">
+                <h2>Contact</h2>
+                <form action="https://formsubmit.co/estebanquesada1997@gmail.com" method="POST" >
+                    <div class="form-group">
+                        <label for="nombre">Name:</label>
+                        <input type="text" class="form-control form-control-lg" id="nombre" name="Name"
+                            placeholder="write your name" title="Write your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control form-control-lg" id="lastName" name="LastName"
+                            placeholder="Write your last name" title="Write your last name" required>
+                    </div>
+                    <label for="gender">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender" checked value="Female">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Female
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender" value="Male">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="fechaNacimiento">Birthdate:</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                    </div>
+                    <input type="hidden" id="edad" name="edad">
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control form-control-lg" id="email" name="email"
+                            placeholder="write your email" title="Write your E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Message:</label>
+                        <textarea class="form-control form-control-lg" id="mensaje" rows="4" name="message"
+                            placeholder="Write a Message" title="Write a message" required></textarea>
+                    </div>
+                    <button id="botonG" type="submit" class="btn btn-primary" onclick="calcularEdad()">Submit</button>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/"> <!-- Cambiar el value por la pagina de inicio cuando se suba -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                </form>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <footer id="foot">
+        <div id="contenedorFoot">
+            <div id="redesSociales">
+
+                <a href="https://www.facebook.com/profile.php?id=61550250025984"><img
+                        src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="facebook"></a>
+                <a href="https://www.tiktok.com/@anthonyquesadas"><img src="Imagenes/TikTok.png" alt="TikTok"></a><br>
+
+            </div>
+            <div id="contenedorMenu">
+                <nav>
+                    <a class="nav-link" href="index.html">HOME</a>                    
+                    <a class="nav-link" href="menu.html">MENU</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="author.html">AUTHOR</a>
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                    <a class="nav-link" href="gallery.html">PHOTO GALLERY</a>
+                </nav>
+                <button type="button" id="suscribeBnt" class="btn btn-light">Subscribe</button>
+
+            </div>
+            <div id="autor">
+                
+                <p><strong>&copy;Phone:</strong> 319-464-1699 (Text Only)</p> <br>
+                <p><strong>Email:</strong>aq-sanchez92@hotmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

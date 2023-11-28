@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tienda Galletas</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="shortcut icon" href="Imagenes/circle_logo.webp">
+    </head>
+    <body>
+        <div id="navegador">
+             <nav class="navbar navbar-expand-lg " id="navbar">
+                <div class="container-fluid">
+                  <a id="icono" href="index.html"><img src="Imagenes/circle_logo.webp" alt="Logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="spanNav"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="menu.html">MENU</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">CART</a>
+                        </li>
+                      
+                      
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <main>
+            <div id="contenedor">
+                <div id="eslogan">
+                    
+                    <p> <strong>Hi! I'm Anthony</strong>  <br>
+                        <br>I'm a Graphic Designer that by pure coincidence ended up in the wonderful world of decorated cookies and cakes. I make everything from scratch and my decorations are, for the majority of the times, completely edible.<br>
+                        <br>I'm not a professional baker, but I put a lot of love and time in every one of my creations.  <br>
+                        <br>If you're brave enough to hire an amateur baker/decorator to make any of your special occasions goodies, then don't hesitate to contact me.
+                    </p>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Imagenes/image0.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/image1.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Galleta.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <iframe  src="https://www.youtube.com/embed/GnPVA72YxHE" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>  
+            </div>
+             <div id="botonGaleria">
+                <button class="btn btn-primary" id="botonG" type="button" onclick="galeria()">VIEW MY GALLERY</button>
+             </div>
+
+        </main>
+
+        <footer id="foot">
+            <div id="contenedorFoot">
+            <div id="redesSociales">
+                
+                <a href="https://www.facebook.com/profile.php?id=61550250025984"><img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="facebook"></a>
+                <a href="https://www.tiktok.com/@anthonyquesadas"><img src="Imagenes/TikTok.png" alt="TikTok"></a><br>
+                
+            </div>
+            <div id="contenedorMenu">
+                <nav>
+                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="menu.html">MENU</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="author.html">AUTHOR</a>
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                    <a class="nav-link" href="gallery.html">PHOTO GALLERY</a>  
+                </nav>
+                <button type="button" id="suscribeBnt" class="btn btn-light">Subscribe</button>
+            </div>
+            <div id="autor">
+                <p><strong>&copy;Phone:</strong> 319-464-1699 (Text Only)</p> 
+                <p><strong>Email:</strong> aq-sanchez92@hotmail.com</p>
+            </div>
+            
+            </div>      
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
