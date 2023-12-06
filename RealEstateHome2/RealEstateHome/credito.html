@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Crédito Happy Eart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/forms.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scr/credito.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <nav class="menu">
+                <ul>
+                    <li class="btn_1"><a href="home.html">Home</a></li>
+                    <li class="btn_2"><a href="weather.html">Tiempo</a></li>
+                    <li class="btn_3"><a href="credito.html">Crédito</a></li>
+                    <li class="btn_4"><a href="#">Servicios</a></li>
+                    <li class="btn_5"><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+            <img src="images/logo.jpg" alt="" name="logo" width="251" height="45" id="logo" />
+        </header>
+
+        <div id="main">
+            <form class="contact_form" id="contact_form">
+                <div>
+                    <ul>
+                        <li>
+                            <h2>Cotizador</h2>
+                            <span class="required_notification">* Datos requeridos</span>
+                        </li>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="Jose Peralta Ramos" />
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="creditos12@utn.com" required=required />
+                            <span class="form_hint">Formato correcto: "name@something.com"</span>
+                        </li>
+                        <li>
+                            <label for="fSoli">Fecha de solicitud:</label>
+                            <input type="date" name="fSoli" placeholder="17/8/1985" required=required />
+                            <span class="form_hint">Formato correcto: "dd/mm/yyyy"</span>
+                        </li>
+                        <li>
+                            <label for="txtConstru">Metros Construcción:</label>
+                            <input type="text" name="txtConstru" placeholder="00000" required=required />
+                            <span class="form_hint">Formato correcto: "#####.##"</span>
+                        </li>
+                        <li>
+                            <label for="txtTerreno">Metros Terreno:</label>
+                            <input type="text" name="txtTerreno" placeholder="00000" required=required />
+                            <span class="form_hint">Formato correcto: "#####.##"</span>
+                        </li>
+                        <li>
+                            <label for="chkAcabado">Acabado de lujo:</label>
+                            <input type="checkbox" name="chkAcabado" id="chkAcabado" required=required />
+                        </li>
+                        <li id="ubi">
+                            <label>Ubicación:</label>
+                            <input type="radio" name="ubicacion" value="Rural" required=required />
+                            <p>Rural</p>
+                            <input type="radio" name="ubicacion" value="Urbano" required=required />
+                            <p for="urbano">Urbano</p>
+                        </li>
+                        <li>
+                            <label for="numBanos">Cantidad de baños Completos:</label>
+                            <input type="number" name="numBanos" min="1" max="5" required=required />
+                        </li>
+                        <li>
+                            <label for="chkCochera">Cochera:</label>
+                            <input type="checkbox" name="chkCochera" required=required />
+                        </li>
+                        <li>
+                            <label for="numCarros">Cantidad de Carros:</label>
+                            <input type="number" name="numCarros" min="1" max="3" />
+                        </li>
+                        <li>
+                            <label>Extras:</label>
+                            <input type="checkbox" name="chkBalcon" required=required />
+                            <p for="chkBalcon">Balcon</p>
+                            <input type="checkbox" name="chkPiscina" required=required />
+                            <p for="chkPiscina">Piscina</p>
+                            <input type="checkbox" name="chkParrilla" required=required />
+                            <p for="chkParrilla">Parrilla</p>
+                            <input type="checkbox" name="chkTerraza" required=required />
+                            <p for="chkTerraza">Terraza</p>
+                        </li>
+                        <li>
+                            <label for="txtPrima">Prima:</label>
+                            <input type="text" name="txtPrima" placeholder="00000.00" required=required />
+                            <span class="form_hint">Formato correcto: "#####.##"</span>
+                        </li>
+                        <li>
+                            <button type="submit" class="submit" onclick="aplica()">Cotizar</button>
+                        </li>
+                        <li>
+                            <p id="cotizacion">...</p>
+                        </li>
+                        <li>
+                            <button type="button" class="submit" id="cotizacion" onclick="proyeccion()">Mostrar Cotización
+                                Completa</button>
+                        </li>
+                        <li>
+                            <h2 id="textoDesgloce" style="visibility: hidden;">Desgloce de los montos de la casa:</h2>
+                            <div id="tblData"></div>
+                            <p id="desgloce" style="visibility: hidden;">...</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <footer id="footer">
+            <p>
+                <a href="home.html">Home</a> | <a href="weather.html">Tiempo</a> | <a href="credito.html">Crédito</a> |
+                <a href="#">Servicios</a> | <a href="contacto.html">Contáctenos</a><br />
+                Copyright &copy; Real State Happy Eart
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
